@@ -19,6 +19,16 @@ Construir um sistema que simplifique a integração entre discentes e/ou docente
 * Aplicar sistema de notificação por interesse onde um usuário recebe propostas de projetos que lhe cabem.
 * Disseminar e incentivar a idéia de projetos integrados
 
+## Funcionalidades do Sistema
+* Criação de projetos:<br>
+    O sistema dará a liberdade ao usuário de descrever um projeto e deixa-lo aberto ao público
+* Alistamento em projetos:<br>
+    O sistema permitirá que o usuário se aliste em um projeto, participando de seu desenvolvimento
+* Administração de projetos:<br>
+    O sistema permitirá que um usuário ganhe permissões especiais para que assim auxilie o criador de um projeto em seu desenvolvimento
+* Moderação de projetos:<br>
+    O sistema permitirá a criação de um usuário com permissões de gerenciamento geral da comunidade no sistema.
+
 ## Equipe
 
 | Nome | Github |
@@ -27,4 +37,4 @@ Construir um sistema que simplifique a integração entre discentes e/ou docente
 | Firmo Lopes de Oliveira Neto |  |
 | João Victor Sousa Oliveira |  |
 | Luiz Araujo da Conceição Junior |  |
-| Phelyppe Matheus Silva Da Costa |  |
+| Phelyppe Matheus Silva Da Costa | https://github.com/PhePheMath |
