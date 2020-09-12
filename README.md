@@ -51,4 +51,4 @@ Construir um sistema que simplifique a integração entre discentes e/ou docente
 | Phelyppe Matheus Silva Da Costa | https://github.com/PhePheMath |
 
 ## Casos de Uso
-![alt text](IsNotRaymond.github.com/iTeamManager/documentation/UCiTeM.png)
+![alt text](documentation/UCiTeM.png)
