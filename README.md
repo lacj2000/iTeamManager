@@ -16,18 +16,29 @@ Construir um sistema que simplifique a integração entre discentes e/ou docente
 
 ## Objetivos específicos
 * Desenvolver um sistema onde todos no instituto tenham acesso aos projetos cadastrados no sistema
-* Aplicar sistema de notificação por interesse onde um usuário recebe propostas de projetos que lhe cabem.
+* Aplicar sistema de notificação por interesse onde um usuário recebe propostas de projetos que lhe cabem
 * Disseminar e incentivar a idéia de projetos integrados
 
 ## Funcionalidades do Sistema
-* Criação de projetos:<br>
-    O sistema dará a liberdade ao usuário de descrever um projeto e deixa-lo aberto ao público
-* Alistamento em projetos:<br>
-    O sistema permitirá que o usuário se aliste em um projeto, participando de seu desenvolvimento
-* Administração de projetos:<br>
-    O sistema permitirá que um usuário ganhe permissões especiais para que assim auxilie o criador de um projeto em seu desenvolvimento
-* Moderação de projetos:<br>
-    O sistema permitirá a criação de um usuário com permissões de gerenciamento geral da comunidade no sistema.
+| Nome | Atores | Descrição |
+| ------ | ------ | ------ |
+|Fazer login|Usuário|Esse caso de uso permite que o usuário entre no sistema|
+|Exibir erro de Login|Usuário|Exibe-se uma tela de erro e o usuário volta para a tela de Login|
+|Verificar senha|Usuário|Sistema verifica se a senha é compatível com a senha cadastrada pelo usuário|
+|Pesquisar Projetos|Usuário|O usuário pode pesquisar projetos para ingressar|
+|Solicitar Participação|Usuário|O usuário solicita a participação nos projetos que tem interesse|
+|Selecionar Projeto|Usuário|O usuário seleciona um projeto de seu interesse para obter acesso a seus detalhes|
+|Administrar Projetos|Moderador|O Moderador realiza ações que lhe foram permitidas pelo criador do projeto|
+|Visualizar projeto|Usuário|O usuário obtém acesso aos detalhes de um projeto previamente selecionado|
+|Editar projeto|Administrador|O usuário com permissão pode editar um projeto|
+|Deletar projeto|Administrador, moderador|O usuário com permissão pode excluir um projeto|
+|Administrar Projeto|Administrador|Gerenciar o ambiente do projeto para não se tornar toxico|
+|Expulsar Participante|Administrador|O Administrador pode expulsar quem ele acha que está atrapalhando no projeto|
+|Criar projeto|Pesquisador|Pesquisador pode criar um projeto, dentro desse projeto ele é o criador|
+|Verificar Participação|Criador|Descrição - O criador de projeto verifica o perfil do Usuário antes de aceitar u negar sua participação|
+|Aceitar Participação|Criador|O criador de projeto permite que o usuário entre para o seu projeto|
+|Negar Participação|Criador|O Criador de projeto nega que o usuário entre para o projeto|
+|Alocar cargos|Criador|O Criador de projetos pode alocar cargos para quem está abaixo dele na hierarquia do projeto|
 
 ## Equipe
 
@@ -38,3 +49,6 @@ Construir um sistema que simplifique a integração entre discentes e/ou docente
 | João Victor Sousa Oliveira |  |
 | Luiz Araujo da Conceição Junior |  |
 | Phelyppe Matheus Silva Da Costa | https://github.com/PhePheMath |
+
+## Casos de Uso
+![alt text](IsNotRaymond.github.com/iTeamManager/documentation/UCiTeM.png)
