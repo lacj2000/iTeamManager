@@ -8,6 +8,24 @@
 <div class="card profile-box">
     <div class="user-box">
         <img src="{{ user.image_profile }}" class="profile-image img-fluid img-thumbnail">
+        <h3 class="username-box">
+            {{user.name}}
+        </h3>
+        <div>
+            <div class="contacts-box">
+                <address>
+                    <p>Contatos: <a href="mailto:{{use.email}}">{{user.email}}</a></p>
+                </address>
+            </div>
+        </div>
+        <div>
+            <div class="biografy-box">
+                <p>Biografia: {{user.description}}</p>
+            </div>
+        </div>
+
     </div>
+
+
 </div>
 {% endblock %}

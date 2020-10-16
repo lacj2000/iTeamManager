@@ -77,10 +77,26 @@
 }
 
 .user-box{
-    background-color: var(--font-dark-color2);
+    background-color: var(--bg-color2);
+}
+
+.username-box{
+    display: -webkit-inline-flex;
+    margin-left: 30px;
+}
+
+.biografy-box{
+    display: -webkit-inline-flex;
+    margin-left: 30px;
+}
+
+.contacts-box{
+    display: -webkit-inline-flex;
+    margin-left: 30px;
 }
 
 .img-thumbnail{
+    display: inline-flex;
     float:  left !important;
     max-width: 190px !important;
     height: 190px !important;
