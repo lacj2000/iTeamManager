@@ -7,4 +7,9 @@ def singin(request):
     arquivo = 'signin_page/signin.html'
     return render(request, arquivo, contexto)
 
+def profile(request, user_id):
+    contexto = {'user':{'user_id':5,'name':'Elmo','image_profile':'/media/images/12345678.png' }}
+    arquivo = 'profile/profile.html'
+    return render(request, arquivo, contexto)
+
 

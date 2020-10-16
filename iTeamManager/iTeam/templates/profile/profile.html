@@ -1,0 +1,13 @@
+{% extends 'bases/base_offline.html' %}
+
+{% block title %}
+{{user.name}}
+{% endblock %}
+
+{% block body %}
+<div class="card profile-box">
+    <div class="user-box">
+        <img src="{{ user.image_profile }}" class="profile-image img-fluid img-thumbnail">
+    </div>
+</div>
+{% endblock %}
