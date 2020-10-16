@@ -1,0 +1,75 @@
+:root{
+--nav-color: #BAD9C2 ;
+--bg-color: #F2E0C9 ;
+--bg-color2: #FFFFFF;
+--font-color: #FFFFFF;
+--font-color2: #F2E0C9;
+--font-color3: #A9DBB4;
+--font-dark-color: #A64F3C;
+--font-dark-color2: #734C36;
+--font-dark-color3: #734C36;
+--font-dark-color4: #78866B;
+--nav-border-color: #CED4DA;
+}
+/*
+#BAD9C2
+#F2E0C9
+#BF7D56
+#734C36
+#A64F3C
+*/
+.navbar{
+    background-color: var(--nav-color) !important;
+}
+.navbar-brand{
+    color: var(--font-color) !important;
+    font-weight: bolder;
+}
+
+.nav-search-button{
+    background-color: var(--font-color) !important;
+    border-color: var(--nav-border-color) !important;
+    color: var(--font-color3) !important;
+    font-weight: bolder;
+}
+
+.drop-item{
+    color: var(--font-color) !important;
+    font-weight: bolder;
+}
+
+.drop-item-inverse{
+    color: var(--nav-color) !important;
+    font-weight: bolder;
+}
+
+
+.body-content{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color2);
+    
+}
+
+.form-box{
+    width: 25rem !important;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: var(--nav-border-color) !important;
+    color: var(--font-dark-color4);
+}
+
+.center{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.form-button{
+    float: right !important;
+    background-color: var(--nav-color) !important;
+    border-color: var(--nav-color) !important;
+    color: var(--font-color) !important;
+
+}
