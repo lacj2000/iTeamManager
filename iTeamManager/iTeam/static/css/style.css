@@ -81,23 +81,49 @@
 }
 
 .username-box{
+    position: relative;
     display: -webkit-inline-flex;
-    margin-left: 30px;
+    height: auto;
+    width: auto;
+    margin-right: 20px;
 }
 
-.biografy-box{
-    display: -webkit-inline-flex;
-    margin-left: 30px;
+.username-box ul{
+    list-style: none;
 }
 
-.contacts-box{
-    display: -webkit-inline-flex;
-    margin-left: 30px;
-}
 
-.img-thumbnail{
+.img-thumbnail-profile-user{
     display: inline-flex;
+    position: relative;
     float:  left !important;
     max-width: 190px !important;
     height: 190px !important;
 }
+
+.img-thumbnail-profile-projects{
+    display: inline-flex;
+    position: relative;
+    float:  left !important;
+    max-width: 150px !important;
+    height: 150px !important;
+}
+
+.user-projects-box{
+    margin-top: 30px !important;
+}
+
+.profile-containner-projects{
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    grid-template-rows: repeat(3,300px);
+}
+.profile-project-item ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: auto;
+    
+}
+/* .profile-project-item{
+
+} */

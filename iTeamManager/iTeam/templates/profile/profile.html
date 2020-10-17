@@ -1,31 +1,102 @@
-{% extends 'bases/base_offline.html' %}
+{% extends "bases/base_offline.html" %}
 
 {% block title %}
 {{user.name}}
 {% endblock %}
 
 {% block body %}
-<div class="card profile-box">
+<div class="card profile-box overflow-auto">
+    <!-- user -->
     <div class="user-box">
-        <img src="{{ user.image_profile }}" class="profile-image img-fluid img-thumbnail">
-        <h3 class="username-box">
-            {{user.name}}
-        </h3>
-        <div>
-            <div class="contacts-box">
-                <address>
-                    <p>Contatos: <a href="mailto:{{use.email}}">{{user.email}}</a></p>
-                </address>
-            </div>
-        </div>
-        <div>
-            <div class="biografy-box">
-                <p>Biografia: {{user.description}}</p>
-            </div>
+        <img src="{{ user.img_profile.url }}" class="profile-image rounded-circle img-fluid img-thumbnail-profile-user">
+        <div class="username-box">
+            <ul>
+                <li>
+                    <h3>
+                        {{user.name}}
+                    </h3>
+                </li>
+                <li>
+                    <address>
+                        <p><a href="mailto:{{use.email}}">{{user.email}}</a></p>
+                    </address>
+                </li>
+                <li>
+                    <p>
+                        Biografia: {{user.description}}
+                    </p>
+                </li>
+            </ul>
         </div>
 
+        
     </div>
+    <!-- user projects -->
+    <div class="user-projects-box">
+        <h4>Projetos</h4>
+        <hr/>
+        <div class="profile-containner-projects">
+            {% if projects %}
+                    {% for project in projects %}
+                        <div class="profile-project-item">
+                            <ul>
+                                <li>
+                                    {%  if project.img_project %}
+                                    <img src="{{ project.img_project.url }}" class="profile-image rounded-circle img-fluid img-thumbnail-profile-projects">
+                                    {% else %}
+                                    <img src="/media/media/default/background.jpg" class="profile-image rounded-circle img-fluid img-thumbnail-profile-projects">
+                                    <br/>
+                                    {% endif %}
+                                </li>
+                                <li>
+                                    <h6>
+                                        {{project.name}} 
+                                    </h6>
+                                </li>                            
+                            </ul>
 
-
+                        </div>
+                    {% endfor %}
+            {% else %}
+                <div>
+                    <p>Este Usuário não possui projetos</p>
+                </div>
+            
+            {% endif %}            
+            <!-- 
+                
+                {% if projects %}
+                {% for project in projects %}
+                    <div class="profile-project-item">
+                        <ul>
+                            <li>
+                                {%  if project.img_project %}
+                                <img src="{{ project.img_project.url }}" class="profile-image rounded-circle img-fluid img-thumbnail-profile-projects">
+                                {% else %}
+                                <img src="/media/media/default/background.jpg" class="profile-image rounded-circle img-fluid img-thumbnail-profile-projects">
+                                {% endif %}
+                            </li>
+                            <li>
+                                
+                                <h6>
+                                    {{project.name}} 
+                                </h6>
+                            </li>
+                            <li>
+                                <p>
+                                    {{project.description}} 
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    {% endfor %}
+            {% else %}
+            <div>
+                    <p>Este Usuário não possui projetos</p>
+                </div>
+                {% endif %}        
+            -->
+        </div>    
+    </div>    
 </div>
 {% endblock %}
